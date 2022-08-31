@@ -1,0 +1,172 @@
+.container-1 {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:#293f50;
+    margin: 0 auto
+}
+
+.nav{
+    text-align:right;
+    margin-right:150px;
+}
+
+.nav h3 {
+    color:rgba(95, 145, 142, 0.877);
+    
+}
+
+.container-1 h1{
+    width:150px;
+    margin-left:185px;
+}
+
+.container-1 h1 a{
+    text-decoration:none;
+    color:rgb(255, 255, 255);
+    padding:0;
+    font-size:43px;
+}
+
+.container-1 h1 a:hover{
+    color:rgba(95, 145, 142, 0.877);
+    
+}
+
+
+nav ul li {
+        display:inline-block;
+        margin-right:8px;
+        transition:ease 1s;
+        
+    }
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+}
+ 
+    
+    
+nav ul li a:hover{
+    color:rgba(95, 145, 142, 0.877);
+    margin-left:5px
+}
+
+.container11{
+    background-color:#293f50;
+    text-align: center;
+    margin-top: -25px;
+    margin-bottom:35px;
+    padding:45px;
+}
+.subtitle{
+    text-align:center;
+    color:rgba(95, 145, 142, 0.877);
+    font-size:34px;
+}
+
+.subtitle-info{
+    color:white;
+    font-size:25px;
+    width:750px;
+    margin: 0 auto;
+    margin-bottom:15px;
+}
+
+.container11 button {
+    border:2px #fff solid;
+    background-color:#293f50;
+    padding:20px 25px;
+    font-size:15px;
+    border-radius:5px;
+    margin: 0 auto;
+    color: #fff;
+
+}
+
+button:hover{
+    color:rgba(95, 145, 142, 0.877);
+    background-color:white;
+}
+
+.container-2{
+    background-color:white;
+    display:flex;
+    justify-content:center;
+    gap:25px
+
+} 
+
+.box-1, .box-2, .box-3 {
+    width: 25%;
+}
+
+.box-1 img,.box-2 img,.box-3 img{
+    border-radius:5px;
+
+}
+/*
+.box-1 img,.box-2 img,.box-3 img,:hover{
+    transform:scale(110%)
+ }
+
+*/
+
+.hover:hover {
+    transform:scale(110%) 
+}
+
+footer{
+    display:flex;
+    justify-content:space-around;
+    background-color:#293f50;
+    color:white;
+    padding:20px;
+    margin-top:20px
+}
+
+footer p {
+    color:rgba(95, 145, 142, 0.877);
+}
+
+footer nav ul li a{
+    color:white
+}
+
+footer nav ul li a:hover {
+    display:inline-block;
+    transition:ease 1s;
+    padding:5px;
+    color:rgba(95, 145, 142, 0.877);
+}
+
+@media (max-width: 1024px){
+    .container-1 {
+        flex-direction: column;
+    }
+    
+    .container-2 {
+         gap: 5%;
+     }
+
+     .subtitle-info {width: 90%;}
+}
+
+@media (max-width: 768px){
+    .container-2 {
+        gap: 15%;
+    }
+}
+
+@media (max-width: 568px){
+    .container-2 {
+        flex-direction: column;
+    ;}   
+
+    .container-1 { flex-direction: column;}
+
+    .container-1 h1 {margin: 0}
+
+    .nav {margin: 0}
+}
